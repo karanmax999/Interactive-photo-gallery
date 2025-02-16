@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+        <div class="controls">
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="nature">Nature</option>
+                <option value="city">City</option>
+                <option value="people">People</option>
+            </select>
+            <select id="sort">
+                <option value="default">Default</option>
+                <option value="asc">A-Z</option>
+                <option value="desc">Z-A</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <!-- Images will be dynamically inserted here -->
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
